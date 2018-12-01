@@ -4,9 +4,9 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarToggler">
-    <ul class="navbar-nav nav-tabs mr-auto w-100 justify-content-evenly">
-      <app-navigation-item *ngFor="let item of menuItems" [link]="item.link" [title]="item.title">
+  <div class="collapse navbar-collapse background-blue" id="navbarToggler">
+    <ul class="navbar-nav nav-tabs w-100 h-50p justify-content-evenly">
+      <app-navigation-item class="w-16per center" *ngFor="let item of menuItems" [link]="item.link" [title]="item.title">
       </app-navigation-item>
     </ul>
   </div>
