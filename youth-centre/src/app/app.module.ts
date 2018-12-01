@@ -27,14 +27,7 @@ import { FooterComponent } from './app-layout/footer/footer.component';
     BrowserModule,
     RouterModule,
     AppRoutingModule,
-    HeaderModule,
-    HomeModule,
-    AboutModule,
-    NewsModule,
-    ActivitiesModule,
-    EventsModule,
-    TeamModule,
-    ContactModule
+    HeaderModule
   ],
   providers: [RouterOutlet],
   bootstrap: [AppComponent]
