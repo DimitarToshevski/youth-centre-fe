@@ -1,13 +1,8 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "./app/shared/styles/helpers.scss";
-@import "./app/shared/styles/fonts.scss";
-@import "./app/shared/styles/colors.scss";
+@import "trumps.helpers";
+@import "settings.fonts";
+@import "settings.colors";
 
 body {
   background: $mainBodyColor !important;
-}
-.main-wrapper {
-  background: white;
-  margin: 0 5%;
-  box-shadow: 0 0px 4px 2px $mainWrapperColor;
 }
