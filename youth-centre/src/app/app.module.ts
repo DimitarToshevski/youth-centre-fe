@@ -1,18 +1,21 @@
 import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from "@angular/core";
 import { RouterModule, RouterOutlet } from "@angular/router";
 
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
-
-import { HeaderModule } from "./app-layout/header/header.module";
-
-import { HeaderComponent } from "./app-layout/header/header.component";
-import { FooterComponent } from "./app-layout/footer/footer.component";
+import { CoreModule } from "./core/core.module";
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent],
-  imports: [BrowserModule, RouterModule, AppRoutingModule, HeaderModule],
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    RouterModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    CoreModule
+  ],
   providers: [RouterOutlet],
   bootstrap: [AppComponent]
 })

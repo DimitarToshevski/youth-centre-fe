@@ -1,13 +1,17 @@
-import { NgModule } from '@angular/core';
-import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component';
-import { NavigationItemComponent } from './navigation-item/navigation-item.component';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { NavigationMenuComponent } from "./navigation-menu/navigation-menu.component";
+import { NavigationItemComponent } from "./navigation-item/navigation-item.component";
+import { CommonModule } from "@angular/common";
+import { RouterModule } from "@angular/router";
+import { HeaderComponent } from "./header.component";
 
 @NgModule({
-  declarations: [NavigationMenuComponent, NavigationItemComponent],
+  declarations: [
+    NavigationMenuComponent,
+    NavigationItemComponent,
+    HeaderComponent
+  ],
   imports: [CommonModule, RouterModule],
-  exports: [NavigationMenuComponent]
+  exports: [NavigationMenuComponent, NavigationItemComponent, HeaderComponent]
 })
-
 export class HeaderModule {}

@@ -3,6 +3,8 @@
 @import "settings.fonts";
 @import "settings.colors";
 
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 body {
   background: $mainBodyColor !important;
 }

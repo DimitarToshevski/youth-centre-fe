@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-tile',
-  templateUrl: './tile.component.html',
-  styleUrls: ['./tile.component.scss']
+  selector: "app-tile",
+  templateUrl: "./tile.component.html",
+  styleUrls: ["./tile.component.scss"]
 })
 export class TileComponent implements OnInit {
+  @Input() loading = false;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

@@ -1,12 +1,24 @@
 <nav class="navbar navbar-expand-lg navbar-light sticky-top p-0">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarToggler"
+    aria-controls="navbarToggler"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse background-blue" id="navbarToggler">
-    <ul class="navbar-nav nav-tabs w-100 h-50p justify-content-evenly">
-      <app-navigation-item class="w-16per center" *ngFor="let item of menuItems" [link]="item.link" [title]="item.title">
+    <ul class="navbar-nav nav-tabs w-100 h-50p flex-evenly">
+      <app-navigation-item
+        class="w-16per center"
+        *ngFor="let item of menuItems"
+        [link]="item.link"
+        [title]="item.title"
+      >
       </app-navigation-item>
     </ul>
   </div>
