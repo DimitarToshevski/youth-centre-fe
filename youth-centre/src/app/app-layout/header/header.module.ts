@@ -4,6 +4,7 @@ import { NavigationItemComponent } from "./navigation-item/navigation-item.compo
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 import { HeaderComponent } from "./header.component";
+import { MatButtonModule } from "@angular/material";
 
 @NgModule({
   declarations: [
@@ -11,7 +12,7 @@ import { HeaderComponent } from "./header.component";
     NavigationItemComponent,
     HeaderComponent
   ],
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, MatButtonModule],
   exports: [NavigationMenuComponent, NavigationItemComponent, HeaderComponent]
 })
 export class HeaderModule {}

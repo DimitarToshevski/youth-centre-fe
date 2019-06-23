@@ -1,3 +1,27 @@
 :host {
-  box-shadow: 0px 2px 5px -1px rgba(50, 50, 50, 0.2);
+  // box-shadow: 0px 2px 5px -1px rgba(50, 50, 50, 0.2);
+  // width: 300px;
+}
+.example-sidenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+}
+
+.mat-drawer-container {
+  background: none;
+}
+.vertical {
+  writing-mode: tb-rl;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  white-space: nowrap;
+  display: block;
+  position: relative;
+  top: 30px;
+  left: 30px;
 }

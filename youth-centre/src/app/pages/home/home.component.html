@@ -1,7 +1,9 @@
-<app-tile>
+<app-tile [loading]="loading">
   <div class="row-wrap flex-between">
-    <app-card class="m-3"></app-card>
-    <app-card class="m-3"></app-card>
-    <app-card class="m-3"></app-card>
+    <app-card
+      class="mb-5"
+      *ngFor="let post of posts$ | async"
+      [post]="post"
+    ></app-card>
   </div>
 </app-tile>

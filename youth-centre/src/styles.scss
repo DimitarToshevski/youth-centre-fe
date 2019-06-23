@@ -2,9 +2,11 @@
 @import "trumps.helpers";
 @import "settings.fonts";
 @import "settings.colors";
+@import "generic.reset";
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 body {
   background: $mainBodyColor !important;
+  font-family: cursive;
 }

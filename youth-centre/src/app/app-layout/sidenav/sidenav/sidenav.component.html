@@ -1,11 +1,71 @@
-<mat-sidenav-container class="column h-100">
-  <mat-sidenav mode="side" opened class="relative">Sidenav </mat-sidenav>
+<mat-sidenav-container class="column h-100 round-4 example-container">
+  <mat-sidenav
+    class="example-sidenav"
+    #sidenav
+    mode="side"
+    opened
+    position="end"
+  >
+    <button
+      class="w-100-p bold p-10"
+      mat-button
+      mat-subheader
+      (click)="sidenav.toggle()"
+    >
+      <h5>Категории:</h5>
+    </button>
+    <mat-divider></mat-divider>
+    <button class="left w-100-p" mat-button mat-line title="Астрономия">
+      Астрономия
+    </button>
+    <button
+      class="left w-100-p"
+      mat-button
+      mat-line
+      title="Детска вокална група 'Орфейче'"
+    >
+      Детска вокална група "Орфейче"
+    </button>
+    <button class="left w-100-p" mat-button mat-line title="Детски хор 'Орфей'">
+      Детски хор "Орфей"
+    </button>
+    <button class="left w-100-p" mat-button mat-line title="ДТА „Южняче“">
+      ДТА „Южняче“
+    </button>
+    <button
+      class="left w-100-p"
+      mat-button
+      mat-line
+      title="Етнография и история"
+    >
+      Етнография и история
+    </button>
+    <button class="left w-100-p" mat-button mat-line title="Конкурси">
+      Конкурси
+    </button>
+    <button class="left w-100-p" mat-button mat-line title="Младежки дейности">
+      Младежки дейности
+    </button>
+    <button
+      class="left w-100-p"
+      mat-button
+      mat-line
+      title="Превантивно-информационен център по наркотични вещества"
+    >
+      Превантивно-информационен център по наркотични вещества
+    </button>
+    <button class="left w-100-p" mat-button mat-line title="Предстоящо">
+      Предстоящо
+    </button>
+    <button class="left w-100-p" mat-button mat-line title="Театрална школа">
+      Театрална школа
+    </button>
+    <mat-divider></mat-divider>
+  </mat-sidenav>
 
-  <mat-sidenav-content class="m-0">
-    <div>
-      <p>
-        sidenavsidenavsidenavsidenavsidenavsidenav
-      </p>
-    </div>
+  <mat-sidenav-content *ngIf="!sidenav.opened">
+    <button class="vertical" mat-button (click)="sidenav.toggle()">
+      Категории
+    </button>
   </mat-sidenav-content>
 </mat-sidenav-container>
